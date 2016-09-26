@@ -15,11 +15,12 @@ public class lab02
 		String name= "Anisha Tyagi";
 		String address="13567 Lopelia Meadows Place";
 		String City="San Diego";
+		String state="CA";
 		int zip=92130;
 		
 		System.out.println(name);
 		System.out.println(address);
-		System.out.println(City+", "+ zip);
+		System.out.println(City+", "+ state +" "+  zip);
 		
 		int l=2;
 		int h=3;
