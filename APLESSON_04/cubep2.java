@@ -21,7 +21,7 @@ import java.util.Scanner;
  	} 
  	public static void print() 
  	{ 
- 		System.out.printf("The surface area of a cube whose sides are "+ side+" in length is %.5f.", sa); 
+ 		System.out.printf("The surface area of a cube whose sides are "+ side+" in length is %.5f!", sa); 
  	} 
  } 
 

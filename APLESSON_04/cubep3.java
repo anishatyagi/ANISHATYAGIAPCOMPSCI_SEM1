@@ -6,7 +6,7 @@ import java.util.Scanner;
  	public static void main(String[]args) 
  	{ 
  		Scanner kb = new Scanner(System.in); 
- 		System.out.println("Enter the side length of your cube:"); 
+ 		System.out.println("Please, enter the side length of your cube:"); 
  		side = kb.nextDouble(); 
  		 
  		print(calcSurf(side)); 
@@ -17,7 +17,7 @@ import java.util.Scanner;
  	} 
  	public static void print(double sa) 
  	{ 
- 		System.out.printf("The surface area of a cube with a side length of "+ side+" is %.5f.", sa); 
+ 		System.out.printf("The surface area of a cube with a side length of "+ side+" is %.5f!", sa); 
  	} 
  } 
 

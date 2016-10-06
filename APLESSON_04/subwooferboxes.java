@@ -8,14 +8,17 @@ import java.util.Scanner;
  		subwooferboxes volume = new subwooferboxes(); 
  		 
  		Scanner kb = new Scanner(System.in); 
- 		System.out.println("Enter the height--in inches: "); 
+ 		
+		System.out.println("Enter the height--in inches: "); 
  		double height = kb.nextDouble(); 
- 		System.out.println("Enter the length--in inches: "); 
+ 		
+		System.out.println("Enter the length--in inches: "); 
  		double length = kb.nextDouble(); 
  		System.out.println("Enter the width--in inches: "); 
  		double width = kb.nextDouble(); 
  		double conversion = volume.math(height, length, width); 
- 		System.out.println("The volume of your box is " + conversion + " cubic feet.");		 
+ 		
+		System.out.println("The volume of your box is " + conversion + " cubic feet!");		 
  	} 
  	 
  	public double math(double height, double length, double width) 

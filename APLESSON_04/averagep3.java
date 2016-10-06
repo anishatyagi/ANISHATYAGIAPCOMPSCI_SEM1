@@ -7,11 +7,11 @@ import java.util.Scanner;
  	public static void main(String[]args) 
  	{ 
  		Scanner kb = new Scanner(System.in); 
- 		System.out.println("Enter number 1:"); 
+ 		System.out.println("Please enter number 1:"); 
  		num1 = kb.nextDouble(); 
- 		System.out.println("Enter number 2:"); 
+ 		System.out.println("Please enter number 2:"); 
  		num2 = kb.nextDouble(); 
- 		System.out.println("Enter number 3:"); 
+ 		System.out.println("Please enter number 3:"); 
  		num3 = kb.nextDouble(); 
  		 
  		print(average(num1, num2, num3)); 
@@ -22,6 +22,6 @@ import java.util.Scanner;
  	} 
  	public static void print(double avg) 
  	{ 
- 		System.out.printf("The average of "+num1+", "+num2+", and "+num3+" is %.5f .", avg); 
+ 		System.out.printf("The average of "+num1+", "+num2+", and "+num3+" is %.5f !", avg); 
  	} 
  } 

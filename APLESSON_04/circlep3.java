@@ -6,7 +6,7 @@ import java.util.Scanner;
  	public static void main(String[]args) 
  	{ 
  		Scanner kb = new Scanner(System.in); 
- 		System.out.println("Enter the radius of your circle:"); 
+ 		System.out.println("Please, enter the radius of your circle:"); 
  		r = kb.nextDouble(); 
  		 
  		print(calcArea(r)); 
@@ -21,7 +21,7 @@ import java.util.Scanner;
 	
 	public static void print(double area) 
  	{ 
- 		System.out.printf("The area of a circle with a radius of "+r+" is %.5f.", area); 
+ 		System.out.printf("The area of a circle with a radius of "+r+" is %.5f!", area); 
  	} 
  } 
 

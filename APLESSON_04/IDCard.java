@@ -9,13 +9,13 @@ import java.util.Scanner;
  		IDCard card = new IDCard(); 
  		 
  		Scanner keyboard = new Scanner(System.in); 
- 		System.out.println("Please enter your first name:"); 
+ 		System.out.println("Please, enter your first name:"); 
 		
  		String name2 = keyboard.next(); 
- 		System.out.println("Please enter your last name:"); 
+ 		System.out.println("Please, enter your last name:"); 
 		
  		String other2 = keyboard.next(); 
- 		System.out.println("Enter your title:"); 
+ 		System.out.println("Please, enter your title:"); 
 		
  		String name3 = keyboard.next(); 
  		keyboard.nextLine(); 

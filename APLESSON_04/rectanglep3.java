@@ -7,9 +7,9 @@ import java.util.Scanner;
  	public static void main(String[]args) 
  	{ 
  		Scanner kb = new Scanner(System.in); 
- 		System.out.println("Enter the length of the rectangle:"); 
+ 		System.out.println("Please, enter the length of the rectangle:"); 
  		length = kb.nextDouble(); 
- 		System.out.println("Enter the width of the rectangle:"); 
+ 		System.out.println("Please, enter the width of the rectangle:"); 
  		width = kb.nextDouble(); 
  		 
  		print(calcPerim(length, width)); 
@@ -21,6 +21,6 @@ import java.util.Scanner;
  	 
  	public static void print(double perimeter) 
  	{ 
- 		System.out.printf("Your rectangle is %.5f sq ft around.", perimeter); 
+ 		System.out.printf("Your rectangle is %.5f sq ft around!", perimeter); 
  	} 
  } 

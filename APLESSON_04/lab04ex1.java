@@ -48,7 +48,7 @@ import java.util.Scanner;
  		 
  		System.out.println("___________________________________________________"); 
  		 
- 		System.out.println("* Thank you for your support *"); 
+ 		System.out.println("* Thank you for your support! *"); 
  	} 
  	 
  	public void receipt(String item, double price) 
