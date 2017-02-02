@@ -2,11 +2,9 @@ import java.util.Scanner;
 import java.util.ArrayList; 
 import java.util.Arrays; 
  
- 
- public class EX02EXPRESSIONSOLVER 
+ public class EX02EXPRESSIONSOLVER
  { 
- 	
-	public static void main(String[]args) 
+ 	public static void main(String[]args) 
  	{ 
  		Scanner kb = new Scanner(System.in); 
  		System.out.println("Please, enter an equation! "); 
@@ -14,45 +12,51 @@ import java.util.Arrays;
  		 
  		ArrayList<String>equation = new ArrayList<>(Arrays.asList(expression.split(" "))); 
  		 
- 		DOEquation(equation); 
+ 		System.out.println(doEquation(equation)); 
  	} 
+	
+	
  	 
- 	
-	public static void DOEquation(ArrayList<String> function) 
- 	{ 
- 		int i = 0; 
- 		while(i < function.size()) 
+ 	public static ArrayList<String> doEquation(ArrayList<String> equation) 
+ 	{	 
+		int i = 0; 
+		while(i < equation.size()) 
  		{ 
- 			if(i < function.size() && function.get(i).equals("+")) 
+ 			if(equation.get(i).equals("*") || equation.get(i).equals("/")) 
  			{ 
- 				function.set(i, "" + (Integer.parseInt(function.get(i-1)) + Integer.parseInt(function.get(i+1)))); 
- 				function.remove(i-1); 
- 				function.remove(i); 
- 			} 
-			
- 			else if(i < function.size() && function.get(i).equals("-")) 
- 			{ 
- 				function.set(i, "" + (Integer.parseInt(function.get(i-1)) - Integer.parseInt(function.get(i+1)))); 
- 				function.remove(i-1); 
- 				function.remove(i); 
- 			} 
-			
- 			else if(i < function.size() && function.get(i).equals("*")) 
- 			{ 
- 				function.set(i, "" + (Integer.parseInt(function.get(i-1)) * Integer.parseInt(function.get(i+1)))); 
- 				function.remove(i-1); 
- 				function.remove(i); 
- 			} 
-			
- 			else if(i < function.size() && function.get(i).equals("/")) 
- 			{ 
- 				function.set(i, "" + (Integer.parseInt(function.get(i-1)) / Integer.parseInt(function.get(i+1)))); 
- 				function.remove(i-1); 
- 				function.remove(i); 
- 			} 
+ 				if(equation.get(i).equals("*")) 
+ 				{ 
+ 					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1)))); 
+ 				} 
+ 				else 
+ 				{ 
+ 					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1)))); 
+ 				} 
+ 				equation.remove(i-1); 
+ 				equation.remove(i); 
+ 			}
  			i++; 
  		} 
+ 		while(i < equation.size()) 
+ 		{ 
+ 			if(equation.get(i).equals("+") || equation.get(i).equals("-")) 
+ 			{ 
+ 				if(equation.get(i).equals("+")) 
+ 				{ 
+ 					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1)))); 
+ 				} 
+ 				else 
+ 				{ 
+ 					equation.set(i,"" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1)))); 
+ 				} 
+ 				equation.remove(i-1); 
+ 				equation.remove(i); 
+ 			} 
+ 		  
+ 			i++; 
  		 
- 		System.out.println(function); 
+ 		} 
+ 	 
+		return equation; 
  	} 
  } 
