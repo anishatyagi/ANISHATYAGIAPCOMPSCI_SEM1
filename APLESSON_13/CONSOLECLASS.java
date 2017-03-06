@@ -22,5 +22,4 @@ public abstract class CONSOLECLASS extends GAMESYSTEMSCLASS
  	} 
  	 
  }
-
  
