@@ -6,18 +6,18 @@ import java.util.Scanner;
   * @author Laurie White 
   * @version April 2012 
   */ 
-  
-  
- public class MagpieRunner2 
+ public class MagpieRunnerP2 
  { 
  
  
  	/** 
  	* Create a Magpie, give it user input, and print its replies. 
  	*/ 
- 	public static void main(String[] args) 
+ 	
+	
+	public static void main(String[] args) 
  	{ 
- 	Magpie2 maggie = new Magpie2(); 
+ 	MagpieP2 maggie = new MagpieP2(); 
  	 
  	System.out.println (maggie.getGreeting()); 
  	Scanner in = new Scanner (System.in); 
