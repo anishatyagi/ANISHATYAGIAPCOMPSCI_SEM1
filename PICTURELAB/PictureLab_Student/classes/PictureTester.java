@@ -10,6 +10,7 @@ public class PictureTester
  beach.explore();
  }
  
+ 
  public static void testKeepOnlyBlue()
  {
 	Picture beach = new Picture("beach.jpg");
@@ -19,6 +20,7 @@ public class PictureTester
 	
  }
  
+ 
  public static void testNegate()
  {
 	Picture beach = new Picture("beach.jpg");
@@ -27,6 +29,7 @@ public class PictureTester
 	beach.explore();
  }
  
+ 
  public static void testGrayscale()
  {
 	Picture beach = new Picture("beach.jpg");
@@ -34,6 +37,7 @@ public class PictureTester
 	beach.grayscale();
 	beach.explore();
  }
+ 
  
  
  
@@ -46,6 +50,7 @@ public class PictureTester
  caterpillar.explore();
  }
  
+ 
  public static void testMirrorVerticalRightToLeft()
  {
 	Picture caterpillar = new Picture("caterpillar.jpg");
@@ -54,6 +59,7 @@ public class PictureTester
  caterpillar.explore();
  }
  
+ 
  public static void testMirrorHorizontal()
  {
 	Picture caterpillar = new Picture("caterpillar.jpg");
@@ -61,6 +67,7 @@ public class PictureTester
  caterpillar.mirrorHorizontal();
  caterpillar.explore();
  }
+ 
  
  public static void testMirrorHorizontalBotToTop()
  {
@@ -78,6 +85,7 @@ public class PictureTester
  temple.explore();
  }
  
+ 
  public static void testMirrorArms()
  {
 	Picture snowman = new Picture("snowman.jpg");
@@ -85,6 +93,7 @@ public class PictureTester
  snowman.mirrorArms();
  snowman.explore();
  }
+ 
  
  public static void testMirrorGull()
  {
